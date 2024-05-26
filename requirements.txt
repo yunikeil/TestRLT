@@ -1,0 +1,8 @@
+python-telegram-bot
+colorlog
+motor
+pydantic
+pydantic-settings
+python-dotenv
+httpx
+watchdog
