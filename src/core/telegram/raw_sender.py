@@ -6,7 +6,7 @@ import httpx
 from core.logging.helpers import create_logger
 
 
-tg_logger = create_logger("telegram")
+tg_logger = create_logger("telegram_raw_sender")
 
 
 async def split_message(text: str, max_length: int = 4069):
