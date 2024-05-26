@@ -63,4 +63,6 @@ python src/main.py
 
 ![time image](assets/time.png)
 
+Коммиты репозитория:
 
+![git image](assets/git.png)
