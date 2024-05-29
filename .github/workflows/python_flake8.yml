@@ -3,6 +3,9 @@ name: flake8 linting runner
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ "master" ]
+
   pull_request:
     branches: [ "master" ]
 
