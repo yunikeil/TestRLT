@@ -44,7 +44,9 @@ async def aggregate_salary_data(form_data: InputData):
     query = await collection.aggregate(pipeline).to_list(length=None)
     
     def increment_date(date: datetime, interval: str):
-        if interval == 'day':
+        if interval == 'hour':
+            return date +timedelta(hours=1)
+        elif interval == 'day':
             return date + timedelta(days=1)
         elif interval == 'month':
             return date + relativedelta(months=1)
